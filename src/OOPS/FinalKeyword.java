@@ -1,7 +1,7 @@
 package OOPS;
 	//method overriding in final keyworrd
 class Base{
-	public final void display(String s) {
+	public void display(String s) {
 		System.out.println(s);
 	}
 	
