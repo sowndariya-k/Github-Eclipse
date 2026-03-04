@@ -2,9 +2,9 @@ package HandsOn_Oops5;
 
 //base class
 class Employee {
-	String empId;
-	String empName;
-	double baseSalary;
+	protected String empId;
+	protected String empName;
+	protected double baseSalary;
 
 	public Employee(String empId, String empName, double baseSalary) {
 		this.empId = empId;
