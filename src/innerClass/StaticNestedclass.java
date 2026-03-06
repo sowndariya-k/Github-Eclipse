@@ -16,15 +16,14 @@ class Person{
 		System.out.println("Weight value: "+weight);//outer class static variable accessed in static method 
 	}
 	}
-	Gender gender=new Gender();
+	Gender gender=new Gender();//object created for nonStatic 
 }
 
 public class StaticNestedclass {
 
 	public static void main(String[] args) {
 		Person person=new Person();
-		person.gender.nonStaticDisplay();
-		person.gender.staticDisplay();
+		person.gender.nonStaticDisplay();//this is for non static method call
+		Person.Gender.staticDisplay();
 	}
-
 }
