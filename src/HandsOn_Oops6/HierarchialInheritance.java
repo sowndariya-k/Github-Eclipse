@@ -1,4 +1,4 @@
-package inheritance;
+package HandsOn_Oops6;
 //base class
 class person {
 	String name;
