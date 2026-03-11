@@ -8,6 +8,8 @@ public class RemoveDuplicate {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter String: ");
 		String str = input.nextLine();
+		
+		
 		for (int i = 0; i < str.length(); i++) {
 			char c = str.charAt(i);
 			boolean isDuplicate = false;
