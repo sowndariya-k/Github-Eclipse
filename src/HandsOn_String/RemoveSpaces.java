@@ -7,7 +7,6 @@ public class RemoveSpaces {
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
-		System.out.print("Enter String: ");
 		String str = input.nextLine();
 		int start = 0;
 		int end = str.length() - 1;
@@ -23,7 +22,8 @@ public class RemoveSpaces {
 		for (int i = start; i <= end; i++) {
 			result += str.charAt(i);
 		}
-		System.out.println(result);
+		System.out.println("INPUT: " + str);
+		System.out.println("OUTPUT: " + result);
 		input.close();
 
 	}
