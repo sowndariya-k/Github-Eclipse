@@ -6,9 +6,9 @@ public class RemoveDuplicate {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.print("Enter String: ");
 		String str = input.nextLine();
 		
+		StringBuilder result = new StringBuilder();
 		
 		for (int i = 0; i < str.length(); i++) {
 			char c = str.charAt(i);
@@ -20,11 +20,12 @@ public class RemoveDuplicate {
 				}
 			}
 			if (!isDuplicate) {
-				System.out.print(str.charAt(i));
+				result.append(c);
 			}
-			input.close();
 		}
-
+		System.out.println("INPUT: " + str);
+		System.out.println("OUTPUT: " + result);
+		input.close();
 	}
 
 }
